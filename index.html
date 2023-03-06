@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Form</title> 
+</head>
+<body>
+  <header class="header">
+    <h1>Crie e compartilhe <br> seu evento.</h1>
+    <p>
+      O primeiro passo, é preencher esse <br>
+      formulário de inscrição.
+    </p>
+  </header>
+  <main>
+    <div class="container-form">
+      <form class="form">
+        <h1>Informações do Evento</h1>
+        <fieldset class="input">
+          <label for="event">Título do evento<span>(mínimo 8 caracteres)</span></label>
+          <input type="text" name="event" id="event">
+        </fieldset>
+        <fieldset class="input">
+          <label for="link">Link do evento<span>(comece com https://)</span></label>
+          <input type="url" name="link" id="link">
+        </fieldset>
+        <fieldset class="input">
+          <label for="tel">Whatsapp para contato<span>(somente números)</span></label>
+          <input type="tel" name="tel" id="tel">
+        </fieldset>
+        <fieldset class="input">
+          <label for="info">Whatsapp para contato<span>(somente números)</span></label>
+          <textarea name="info" id="info" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset class="input">
+          <label for="info">Categoria</label>
+          <select name="info" id="info" cols="30" rows="10">
+            <option value="Tipo do evento">Tipo do evento</option>
+          </select>
+        </fieldset>
+
+        <h1 class="title">Privacidade</h1>
+        <fieldset class="input">
+          <label for="email">E-mail do administrador<span>(digite um email válido)</span></label>
+          <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset class="input">
+          <label for="password">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
+          <input type="password" name="password" id="password">
+        </fieldset>
+        <fieldset class="input-check">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox">Evento privado</label>
+        </fieldset>
+
+        <h1 class="title">Privacidade</h1>
+        <div class="container-date">
+          <fieldset class="input-date">
+            <label for="date">Data</label>
+            <input type="date" name="date" id="date">
+          </fieldset>
+          <fieldset class="input-hours">
+            <label for="time">Das</label>
+            <input type="time" name="time" id="event-begin">
+          </fieldset>
+          <fieldset class="input-hours">
+            <label for="password">As</label>
+            <input type="time" name="time" id="event-end">
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="container-button">
+      <button type="submit">Salvar evento</button>
+    </div>
+  </footer>
+</body>
+</html>
